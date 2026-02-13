@@ -8,12 +8,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/hharan1899-lgtm/java-jenkins-demo.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean compile'
